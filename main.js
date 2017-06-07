@@ -47,14 +47,15 @@ console.assert(smallestNumber(numbers) === 1, { "message": "smallestNumber shoul
 
 
 // 4.
+
 // Write a function that accepts an array argument
 // and returns the array reversed
 // Hint: When looping over the array, start at the last index
 // and decrement the iterator to zero
 // A:
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.reverse();
-(4) ["Mango", "Apple", "Orange", "Banana"]
+
+var numbers = [18,12,4,1,9,7,11,3,101,5,6];
+numbers.reverse()
 
 
 console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', { 'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"' });
