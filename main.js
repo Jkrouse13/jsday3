@@ -10,7 +10,7 @@ sports.push('football', 'swimming');
 // 2.
 // Using the `strings` array, write a function `longestString()`
 // that accepts an array argument and returns the longest string in the array
-var strings = ['this','is','a','collection','of','words'];
+var strings = ['this', 'is', 'a', 'collection', 'of', 'words'];
 // A:
 
 function longestString(array){
@@ -28,20 +28,23 @@ function longestString(array){
 }
 
 
-console.assert(longestString(strings) === 'collection', {"message": "longestString should return 'collection'"});
+console.assert(longestString(strings) === 'collection', { "message": "longestString should return 'collection'" });
 
 
 // Use the `numbers` array for questions 3 - 8.
-var numbers = [18,12,4,1,9,7,11,3,101,5,6];
+var numbers = [18, 12, 4, 1, 9, 7, 11, 3, 101, 5, 6];
 
 
 // 3.
 // Write a function `smallestNumber()` that accepts an array
 // and returns the smallest number in the array.
 // A:
+function smallestNumber(array) {
+    return Math.min.apply(Math, array);
+};
 
 
-console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should return 1"});
+console.assert(smallestNumber(numbers) === 1, { "message": "smallestNumber should return 1" });
 
 
 
@@ -53,7 +56,7 @@ console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should
 // A:
 
 
-console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
+console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', { 'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"' });
 
 
 // 5.
@@ -68,7 +71,7 @@ var total = 0;
 return total;
 }
 
-console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumbers should return 177'});
+console.assert(sumArrayOfNumbers(numbers) === 177, { 'message': 'sumArrayOfNumbers should return 177' });
 
 
 // 6.
@@ -77,7 +80,7 @@ console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumber
 // A:
 
 
-console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message': 'numbersOver10 should return "12,18,11,101"'});
+console.assert(numbersOver10(numbers).toString() === "12,18,11,101", { 'message': 'numbersOver10 should return "12,18,11,101"' });
 
 
 // 7.
@@ -86,31 +89,31 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // A:
 
 
-console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'numbersOverX should return "18,101"'});
+console.assert(numbersOverX(numbers, 15).toString() === "18,101", { 'message': 'numbersOverX should return "18,101"' });
 
 // 8.
 // Write a function `joinArrays()` that takes two arrays,
 // and returns a single array with the contents of the second array
 // listed after the contents of the first array
-var numbers = [1,12,4,18,9,7,11,3,101,5,6];
-var numbersTwo = [33,56,72,2,5,66,90,21,42];
+var numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
+var numbersTwo = [33, 56, 72, 2, 5, 66, 90, 21, 42];
 // A:
 
 
-console.assert(joinArrays([numbers, numbersTwo]).toString() === '1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42', {'message': 'joinArrays should return "1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42"'});
+console.assert(joinArrays([numbers, numbersTwo]).toString() === '1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42', { 'message': 'joinArrays should return "1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42"' });
 
 
 // 10.
 // Using the `instructors` array, comment the value of each variable below
 var instructors = [
-    ['JD','JavaScript'],
-    ['Tim','JavaScript'],
-    ['Brit','Ruby'],
-    ['Joe','iOS'],
-    ['Dan','JavaScript'],
-    ['Will','JavaScript'],
-    ['Calvin','JavaScript'],
-    ['James','Ruby']
+    ['JD', 'JavaScript'],
+    ['Tim', 'JavaScript'],
+    ['Brit', 'Ruby'],
+    ['Joe', 'iOS'],
+    ['Dan', 'JavaScript'],
+    ['Will', 'JavaScript'],
+    ['Calvin', 'JavaScript'],
+    ['James', 'Ruby']
 ];
 
 var instructorNameDiscipline = instructors[5];
@@ -123,4 +126,8 @@ var instructorTwo = instructors[0][1];
     instructorTwo = 'JavaScript'
 
 var instructorThree = instructors[2][0];
+
+
+
     instructorThree = 'Brit'
+
