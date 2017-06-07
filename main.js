@@ -66,7 +66,7 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // and returns the sum of all of the numbers in the array
 // A:
 function sumArrayOfNumbers(array) {
-var total = 0;    
+var total = 0;
    for (i = 0; i < array.length; i++) {
    total += array[i];
    }
@@ -89,6 +89,19 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", { 'message'
 // Write a function that accepts both an array and number argument
 // and returns an array of only the numbers greater than the number passed to the function
 // A:
+
+const numbers = [18,12,4,1,9,7,11,3,101,5,6];
+
+function numbersOverX(array, n)  {
+  let answer7 = [];
+  for (let x = 0; x < array.length; x++){
+    let i = x;
+    if (array[i] > n) {
+      answer7.push(array[i]);
+    }
+  }
+  return answer7;
+}
 
 
 console.assert(numbersOverX(numbers, 15).toString() === "18,101", { 'message': 'numbersOverX should return "18,101"' });
@@ -132,4 +145,3 @@ var instructorThree = instructors[2][0];
 
 
     instructorThree = 'Brit'
-
