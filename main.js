@@ -13,6 +13,20 @@ sports.push('football', 'swimming');
 var strings = ['this', 'is', 'a', 'collection', 'of', 'words'];
 // A:
 
+function longestString(array){
+  var winner = "a";
+  for(let x = 0; x < array.length; x++){
+    var i = x;
+    // var array_pop = array.pop();
+    // var array_item = array_pop[0];
+    if(array[i].length > winner.length){
+      winner = array[i];
+      console.log(winner);
+    }
+  }
+  return winner;
+}
+
 
 console.assert(longestString(strings) === 'collection', { "message": "longestString should return 'collection'" });
 
@@ -49,7 +63,13 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // Write a function that accepts an array argument
 // and returns the sum of all of the numbers in the array
 // A:
-
+function sumArrayOfNumbers(array) {
+var total = 0;    
+   for (i = 0; i < array.length; i++) {
+   total += array[i];
+   }
+return total;
+}
 
 console.assert(sumArrayOfNumbers(numbers) === 177, { 'message': 'sumArrayOfNumbers should return 177' });
 
@@ -97,13 +117,17 @@ var instructors = [
 ];
 
 var instructorNameDiscipline = instructors[5];
-// greenvIlle = <your answer>
+    instructorNameDiscipline = ['Will', 'JavaScript']
 
 var instructorOne = instructors[4][0];
-// instructorOne = <your answer>
+    instructorOne = 'Dan'
 
 var instructorTwo = instructors[0][1];
-// instructorTwo = <your answer>
+    instructorTwo = 'JavaScript'
 
 var instructorThree = instructors[2][0];
-// instructorThree = <your answer>
+
+
+
+    instructorThree = 'Brit'
+
