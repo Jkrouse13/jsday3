@@ -17,8 +17,6 @@ function longestString(array){
   var winner = "a";
   for(let x = 0; x < array.length; x++){
     var i = x;
-    // var array_pop = array.pop();
-    // var array_item = array_pop[0];
     if(array[i].length > winner.length){
       winner = array[i];
       console.log(winner);
