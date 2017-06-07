@@ -46,7 +46,13 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // Write a function that accepts an array argument
 // and returns the sum of all of the numbers in the array
 // A:
-
+function sumArrayOfNumbers(array) {
+var total = 0;    
+   for (i = 0; i < array.length; i++) {
+   total += array[i];
+   }
+return total;
+}
 
 console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumbers should return 177'});
 
