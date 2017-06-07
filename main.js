@@ -39,7 +39,7 @@ console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should
 // A:
 
 
-console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
+console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,1,4,12,18', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
 
 // 5.
