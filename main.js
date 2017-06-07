@@ -108,13 +108,13 @@ var instructors = [
 ];
 
 var instructorNameDiscipline = instructors[5];
-// greenvIlle = <your answer>
+    instructorNameDiscipline = ['Will', 'JavaScript']
 
 var instructorOne = instructors[4][0];
-// instructorOne = <your answer>
+    instructorOne = 'Dan'
 
 var instructorTwo = instructors[0][1];
-// instructorTwo = <your answer>
+    instructorTwo = 'JavaScript'
 
 var instructorThree = instructors[2][0];
-// instructorThree = <your answer>
+    instructorThree = 'Brit'
