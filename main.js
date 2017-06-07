@@ -3,7 +3,7 @@
 var sports = ['soccer', 'baseball'];
 sports.push('football', 'swimming');
 // A:
-// sports = <your answer>
+// sports = <(4["soccer", "baseball", "football", "swimming"]>
 
 
 
@@ -37,9 +37,12 @@ console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should
 // Hint: When looping over the array, start at the last index
 // and decrement the iterator to zero
 // A:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.reverse();
+(4) ["Mango", "Apple", "Orange", "Banana"]
 
 
-console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,1,4,12,18', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
+console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
 
 // 5.
@@ -57,7 +60,7 @@ console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumber
 // A:
 
 
-console.assert(numbersOver10(numbers).toString() === "18,12,11,101", {'message': 'numbersOver10 should return "18,12,11,101"'});
+console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message': 'numbersOver10 should return "12,18,11,101"'});
 
 
 // 7.
