@@ -57,7 +57,7 @@ console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumber
 // A:
 
 
-console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message': 'numbersOver10 should return "12,18,11,101"'});
+console.assert(numbersOver10(numbers).toString() === "18,12,11,101", {'message': 'numbersOver10 should return "18,12,11,101"'});
 
 
 // 7.
