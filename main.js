@@ -80,7 +80,14 @@ console.assert(sumArrayOfNumbers(numbers) === 177, { 'message': 'sumArrayOfNumbe
 // Write a function that accepts an array argument
 // and returns an array of only the numbers greater than 10
 // A:
-
+var numbers = ["1" , "3" , "5" , "12" , "18" , "11" , "101"];
+ 
+let over10 = []
+for(let x = 0; x < numbers.length; x++) {
+   if(numbers[x] > 10){
+      console.log (numbers[x]);
+   }
+}
 
 console.assert(numbersOver10(numbers).toString() === "12,18,11,101", { 'message': 'numbersOver10 should return "12,18,11,101"' });
 
